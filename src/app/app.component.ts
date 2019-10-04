@@ -12,7 +12,7 @@ export class AppComponent {
   title = 'stargit';
   sun = 'sun-outline';
   moon = 'moon-outline';
-  icon = this.moon;
+  icon = this.sun;
 
   items = [
     {
@@ -23,7 +23,8 @@ export class AppComponent {
     {
       title: 'Discord',
       icon: 'message-square-outline',
-      link: [],
+      url: 'https://discord.gg/yvmEcGM',
+      target: '_blank'
     },
     {
       title: 'About',
@@ -39,16 +40,16 @@ export class AppComponent {
   ];
 
   toggle() {
-    this.sidebarService.toggle(false, 'left');
+    this.sidebarService.toggle(true, 'left');
   }
 
   changeTheme() {
-    if (this.icon === this.moon) {
+    if (this.icon === this.sun) {
       this.themeService.changeTheme('default');
-      this.icon = this.sun;
+      this.icon = this.moon;
     } else {
       this.themeService.changeTheme('dark');
-      this.icon = this.moon;
+      this.icon = this.sun;
     }
   }
 }

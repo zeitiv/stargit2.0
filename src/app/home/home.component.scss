@@ -1,0 +1,8 @@
+@import "../../themes";
+.repoName {
+    text-decoration: none;
+}
+
+.repoName:first-letter {
+  text-transform: uppercase;
+}

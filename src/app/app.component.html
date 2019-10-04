@@ -4,12 +4,15 @@
     <button nbButton ghost size="tiny" (click)="toggle()">
       <nb-icon icon="menu-outline"></nb-icon>
     </button>
-    <h3>Stargit</h3>
-    <!-- <button ghost nbButton>Home</button> -->
-    <button ghost nbButton size="tiny" (click)="changeTheme()" right><nb-icon icon={{icon}}></nb-icon></button>
+    <div class="title">
+        Stargit 2.0
+    </div>
+    <button class="themeSwitch" ghost nbButton size="tiny"  shape="round" (click)="changeTheme()" right>
+      <nb-icon icon={{icon}}></nb-icon>
+    </button>
     <!-- <nb-search type="curtain" end></nb-search> -->
   </nb-layout-header>
-  <nb-sidebar tag="left">
+  <nb-sidebar state="compacted" tag="left">
     <nb-menu [items]="items"></nb-menu>
   </nb-sidebar>
   <nb-layout-column>
@@ -17,7 +20,7 @@
   </nb-layout-column>
 
   <nb-layout-footer fixed>
-
+      Made with ♡ by Argex
   </nb-layout-footer>
 
 </nb-layout>

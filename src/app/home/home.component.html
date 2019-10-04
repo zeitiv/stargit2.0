@@ -1,4 +1,4 @@
-<h1>Welcome to Stargit 2.0</h1>
+<h1>Trending Repositories</h1>
 <nb-card accent="info" *ngFor="let repository of repositories">
     <nb-card-header><a class="repoName" href="{{repository.url}}">{{repository.name}}</a></nb-card-header>
     <nb-card-body *ngIf="repository.description">

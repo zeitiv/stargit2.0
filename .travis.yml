@@ -1,18 +1,15 @@
 language: node_js
-node_js_
-  - "9"
-dist: trusty
-sudo: required
-
-branches:
-  only:
-  - master
-
-before_script:
-  - npm install -g @angular/cli
-  - npm install
-
+node_js:
+  - "stable"
+cache:
+  directories:
+  - node_modules
 script:
-  - ng lint
   - ng build --prod --base-href "https://theargex.github.io/stargit2.0/"
-  - ngh
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $github_token
+  local_dir: build
+  on:
+    branch: master

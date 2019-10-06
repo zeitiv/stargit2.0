@@ -18,7 +18,7 @@ export class AppComponent {
     {
       title: 'Trending',
       icon: 'star-outline',
-      link: '',
+      link: 'trending',
     },
     {
       title: 'Discord',

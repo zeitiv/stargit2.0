@@ -10,7 +10,7 @@ cache:
   directories:
   - node_modules
 script:
-  - ng build --prod --base-href "https://theargex.github.io/stargit2.0/"
+  - ng build --prod --base-href "https://stargit.xyz"
 deploy:
   provider: pages
   skip_cleanup: true

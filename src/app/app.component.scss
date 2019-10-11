@@ -1,14 +1,16 @@
+@import "../themes.scss";
+
 nb-layout-header {
-    position: relative;
-    display: block;
+  position: relative;
+  display: block;
 }
 
-.expanded {
-    
-}
+// .expanded {
+
+// }
 
 .title {
-    font-size: 1.3em;
-    margin-left: 5px;
-    flex: 1;
+  font-size: 1.3em;
+  margin-left: 5px;
+  flex: 1;
 }

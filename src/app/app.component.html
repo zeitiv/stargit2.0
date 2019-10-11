@@ -1,5 +1,4 @@
 <nb-layout>
-
   <nb-layout-header fixed>
     <button nbButton ghost size="tiny" (click)="toggle()">
       <nb-icon icon="menu-outline"></nb-icon>
@@ -16,6 +15,7 @@
     <nb-menu [items]="items"></nb-menu>
   </nb-sidebar>
   <nb-layout-column>
+    <ng-progress></ng-progress>
     <router-outlet></router-outlet>
   </nb-layout-column>
 

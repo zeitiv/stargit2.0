@@ -18,7 +18,14 @@ export class AppComponent {
     {
       title: 'Trending',
       icon: 'star-outline',
-      link: 'trending',
+      link: '/trending',
+      pathMatch: '/full'
+    },
+    {
+      title: 'About',
+      icon: 'info-outline',
+      link: '/about',
+      pathMatch: 'full'
     },
     {
       title: 'Discord',
@@ -27,15 +34,10 @@ export class AppComponent {
       target: '_blank'
     },
     {
-      title: 'About',
-      icon: 'info-outline',
-      link: 'about',
-    },
-    {
       title: 'Github',
       icon: 'github-outline',
       url: 'https://github.com/theArgex/stargit2.0',
-      target: '_blank'
+      target: '_blank',
     },
   ];
 

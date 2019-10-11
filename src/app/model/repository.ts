@@ -1,5 +1,6 @@
 export class Repository {
     author: string;
+    avatar: string;
     name: string;
     url: string;
     description: string;
@@ -9,3 +10,4 @@ export class Repository {
     forks: number;
     currenPeriodStars: number;
 }
+

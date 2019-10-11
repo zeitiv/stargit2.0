@@ -1,10 +1,13 @@
 <h1>Trending Repositories</h1>
-<nb-card accent="info" *ngFor="let repository of repositories">
-    <nb-card-header><a class="repoName" href="{{repository.url}}">{{repository.name}}</a></nb-card-header>
+<nb-card class="cards1" accent="info" *ngFor="let repository of repositories">
+    <nb-card-header>
+        <img src="{{repository.avatar}}" alt="avatar" class="avatar">
+        <a class="repoName" href="{{repository.url}}">{{repository.name}}</a>
+    </nb-card-header>
     <nb-card-body *ngIf="repository.description">
         {{repository.description}}
     </nb-card-body>
     <nb-card-footer>
-        <nb-icon icon="star"></nb-icon>{{repository.stars}}
+        <nb-icon class="icon" icon="star"></nb-icon><span class="starcount">{{repository.stars}}</span>
     </nb-card-footer>
 </nb-card>

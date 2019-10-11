@@ -1,8 +1,25 @@
 @import "../../themes";
 .repoName {
     text-decoration: none;
+    display: inline-block;
 }
 
 .repoName:first-letter {
   text-transform: uppercase;
+}
+
+.avatar {
+  vertical-align: middle;
+  margin-right: 5px;
+  width: 30px;
+}
+
+.icon {
+  width: 1em;
+  margin-right: 3px;
+  vertical-align: middle;
+}
+
+.starcount {
+  display: inline-block;
 }

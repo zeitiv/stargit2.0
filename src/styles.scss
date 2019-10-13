@@ -1,8 +1,13 @@
-@import 'themes';
+@import "themes";
 
-@import '~@nebular/theme/styles/globals';
+@import "~@nebular/theme/styles/globals";
 
 @include nb-install() {
   @include nb-theme-global();
-};
+}
+
+nb-layout-header,  nb-sidebar {
+  background-color: rgba(255, 255, 255, 0.0) !important;
+  backdrop-filter: blur(10px) !important;
+}
 /* You can add global styles to this file, and also import other style files */

@@ -1,18 +1,18 @@
 <nb-layout>
   <nb-layout-header fixed>
-    <button nbButton ghost size="tiny" (click)="toggle()">
-      <nb-icon icon="menu-outline"></nb-icon>
+    <button  ghost size="tiny" (click)="toggle()" class="sidebar-toggle">
+      <nb-icon class="sidebar-toggle-icon" icon="menu-2"></nb-icon>
     </button>
     <div class="title">
         Stargit 2.0
     </div>
-    <button class="themeSwitch" nbTooltip="Change the Theme" ghost nbButton size="tiny"  shape="round" (click)="changeTheme()" right>
+    <button nbTooltip="Change the Theme" ghost nbButton size="tiny" shape="round" (click)="changeTheme()" right>
       <nb-icon icon={{icon}}></nb-icon>
     </button>
     <!-- <nb-search type="curtain" end></nb-search> -->
   </nb-layout-header>
-  <nb-sidebar state="compacted" tag="left">
-    <nb-menu [items]="items"></nb-menu>
+  <nb-sidebar responsive="true" state="compacted" tag="left">
+    <nb-menu  [items]="items"></nb-menu>
   </nb-sidebar>
   <nb-layout-column>
     <ng-progress></ng-progress>

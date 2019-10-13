@@ -7,6 +7,9 @@
 }
 
 nb-layout-header,  nb-sidebar {
+  /* Looks better with less transparency
+     but this will be added when I decide to fully implement it as a custom theme
+  */
   background-color: rgba(255, 255, 255, 0.0) !important;
   backdrop-filter: blur(10px) !important;
 }

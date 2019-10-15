@@ -14,7 +14,8 @@ import { NbThemeModule,
          NbIconModule,
          NbMenuModule,
          NbCardModule,
-         NbTooltipModule } from '@nebular/theme';
+         NbTooltipModule,
+         NbSelectModule} from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -43,6 +44,7 @@ import { AboutComponent } from './about/about.component';
     NbButtonModule,
     NbCardModule,
     NbTooltipModule,
+    NbSelectModule,
     NbSidebarModule.forRoot(),
     NbSidebarModule,
     NbMenuModule.forRoot(),

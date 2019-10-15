@@ -1,13 +1,45 @@
-<h1>Trending Repositories</h1>
-<nb-card class="cards1" accent="info" *ngFor="let repository of repositories">
-    <nb-card-header>
-        <img src="{{repository.avatar}}" alt="avatar" class="avatar">
-        <a class="repoName" href="{{repository.url}}">{{repository.name}}</a>
-    </nb-card-header>
-    <nb-card-body *ngIf="repository.description">
-        {{repository.description}}
-    </nb-card-body>
-    <nb-card-footer>
-        <nb-icon class="icon" icon="star"></nb-icon><span class="starcount">{{repository.stars}}</span>
-    </nb-card-footer>
+<div class="header">
+  <h1 class="title">Trending Repositories</h1>
+  <div class="filter">
+    <nb-select
+      hero
+      class="language"
+      placeholder="Select Language"
+      [(selected)]="selectedLanguage"
+      [(ngModel)]="selectedLanguage"
+      (selectedChange)="onLanuguageSelected($event)"
+    >
+      <nb-option value="all">All</nb-option>
+      <nb-option
+        *ngFor="let language of languages"
+        value="{{ language.urlParam }}"
+        >{{ language.name }}</nb-option
+      >
+    </nb-select>
+    <nb-select
+      hero
+      class="since"
+      placeholder="Select Timespan"
+      [(selected)]="selectedSince"
+      [(ngModel)]="selectedSince"
+      (selectedChange)="onSinceSelected($event)"
+    >
+      <nb-option value="daily">Today</nb-option>
+      <nb-option value="weekly">This Week</nb-option>
+      <nb-option value="monthly">This Month</nb-option>
+    </nb-select>
+  </div>
+</div>
+<nb-card class="repoCards" accent="info" *ngFor="let repository of repositories">
+  <nb-card-header>
+    <img src="{{ repository.avatar }}" alt="avatar" class="avatar" />
+    <a class="repoName" href="{{ repository.url }}">{{repository.author}} / <strong>{{ repository.name }}</strong></a>
+  </nb-card-header>
+  <nb-card-body *ngIf="repository.description">
+    {{ repository.description }}
+  </nb-card-body>
+  <nb-card-footer>
+    <nb-icon class="icon" icon="star"></nb-icon>
+    <span class="starcount">{{ repository.stars }}</span>
+  </nb-card-footer>
 </nb-card>

@@ -1,6 +1,24 @@
 @import "../../themes";
 
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+
+.filter {
+  margin-bottom: 0.67rem;
+}
+
+.language {
+  margin-right: 10px;
+}
+
 .repoName {
+  font-weight: 400;
   text-decoration: none;
   display: inline-block;
 }
@@ -24,3 +42,32 @@
 .starcount {
   display: inline-block;
 }
+
+.repoCards {
+  max-width: 100%;
+}
+
+
+
+/*
+@media (min-width: 576px) {
+  .repoCards {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .repoCards {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .repoCards {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .repoCards {
+    max-width: 1140px;
+  }
+}
+*/

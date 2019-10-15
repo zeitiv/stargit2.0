@@ -2,8 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { TrendingService } from '../service/trending.service';
 import { Repository } from '../model/repository';
 import { Language } from '../model/language';
-import { FormControl } from '@angular/forms';
-
 
 @Component({
   selector: 'app-home',

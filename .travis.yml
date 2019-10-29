@@ -6,9 +6,6 @@ matrix:
     - os: linux
       dist: trusty
       sudo: required
-cache:
-  directories:
-  - node_modules
 script:
   - ng build --prod --base-href "https://stargit.xyz"
 deploy:

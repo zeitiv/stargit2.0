@@ -6,6 +6,9 @@ matrix:
     - os: linux
       dist: trusty
       sudo: required
+cache:
+  directories:
+  - node_modules
 script:
   - ng build --prod --base-href "https://stargit.xyz"
 deploy:
@@ -18,3 +21,4 @@ deploy:
     branch: master
 after_script:
   - bash -c "$(curl -fsSL https://raw.githubusercontent.com/MaT1g3R/travis_discord/master/travis.sh)"
+  

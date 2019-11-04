@@ -1,5 +1,7 @@
 # Stargit 2.0
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/theArgex/stargit2.0.svg)](https://greenkeeper.io/)
+
 A fully functional website can be found [here](https://stargit.xyz).
 
 ## Development server

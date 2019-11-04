@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "now-build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -16,7 +17,6 @@
     "@angular/common": "~8.2.4",
     "@angular/compiler": "~8.2.4",
     "@angular/core": "~8.2.4",
-    "@angular/fire": "^5.2.1",
     "@angular/forms": "~8.2.4",
     "@angular/platform-browser": "~8.2.4",
     "@angular/platform-browser-dynamic": "~8.2.4",
@@ -25,8 +25,8 @@
     "@nebular/theme": "^4.3.1",
     "@ngx-progressbar/core": "^5.3.2",
     "@ngx-progressbar/http": "^5.3.2",
+    "@zeit/ng-deploy": "^0.3.0",
     "eva-icons": "^1.1.1",
-    "firebase": "^7.0.0",
     "rxjs": "~6.5.3",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"

@@ -1,4 +1,4 @@
-# Stargit 2.0 [![Build Status](https://travis-ci.com/theArgex/stargit2.0.svg?branch=master)](https://travis-ci.com/theArgex/stargit2.0)
+# Stargit 2.0
 
 A fully functional website can be found [here](https://stargit.xyz).
 

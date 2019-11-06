@@ -24,9 +24,9 @@
       [(ngModel)]="selectedSince"
       (selectedChange)="onSinceSelected($event)"
     >
-      <nb-option value="daily">Today</nb-option>
-      <nb-option value="weekly">This Week</nb-option>
-      <nb-option value="monthly">This Month</nb-option>
+      <nb-option value="daily" class="daily">Today</nb-option>
+      <nb-option value="weekly" class="weekly">This Week</nb-option>
+      <nb-option value="monthly" class="monthly">This Month</nb-option>
     </nb-select>
   </div>
 </div>
@@ -40,6 +40,6 @@
   </nb-card-body>
   <nb-card-footer>
     <nb-icon class="icon" icon="star"></nb-icon>
-    <span class="starcount">{{ repository.stars }}</span>
+    <span class="starCount">{{ repository.stars }}</span>
   </nb-card-footer>
 </nb-card>

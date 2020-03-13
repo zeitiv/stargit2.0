@@ -23,7 +23,7 @@
     "@angular/platform-browser-dynamic": "~8.2.4",
     "@angular/router": "~8.2.4",
     "@nebular/eva-icons": "^4.3.1",
-    "@nebular/theme": "^4.3.1",
+    "@nebular/theme": "^5.0.0",
     "@ngx-progressbar/core": "^5.3.2",
     "@ngx-progressbar/http": "^5.3.2",
     "@zeit/ng-deploy": "^0.3.0",

@@ -22,18 +22,6 @@ export class AppComponent {
       pathMatch: '/full'
     },
     {
-      title: 'About',
-      icon: 'info-outline',
-      link: '/about',
-      pathMatch: 'full'
-    },
-    {
-      title: 'Discord',
-      icon: 'message-square-outline',
-      url: 'https://discord.gg/yvmEcGM',
-      target: '_blank'
-    },
-    {
       title: 'Github',
       icon: 'github-outline',
       url: 'https://github.com/theArgex/stargit2.0',

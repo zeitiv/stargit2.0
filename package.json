@@ -8,7 +8,8 @@
     "now-build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e --webdriver-update=false",
+    "webdriver-update": "webdriver-manager update --versions.chrome=$(google-chrome-stable --version | cut -d ' ' -f 3)"
   },
   "private": true,
   "dependencies": {
@@ -37,7 +38,7 @@
     "@angular/compiler-cli": "~8.2.4",
     "@angular/language-service": "~8.2.4",
     "@schematics/angular": "~8.3.2",
-    "@types/jasmine": "~3.4.5",
+    "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~12.12.5",
     "angular-cli-ghpages": "^0.6.0",
@@ -50,7 +51,7 @@
     "karma-jasmine": "~2.0.1",
     "karma-jasmine-html-reporter": "^1.4.0",
     "protractor": "~5.4.0",
-    "ts-node": "~8.4.1",
+    "ts-node": "~8.5.0",
     "tslint": "~5.20.0",
     "typescript": "~3.5.3"
   }

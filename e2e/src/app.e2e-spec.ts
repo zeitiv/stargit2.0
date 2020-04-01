@@ -1,16 +1,16 @@
 import { AppPage } from './app.po';
 import { browser, logging } from 'protractor';
 
-describe('workspace-project App', () => {
+describe('stargit App', () => {
   let page: AppPage;
 
   beforeEach(() => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should display Home Title', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('stargit app is running!');
+    expect(page.getTitleText()).toEqual('Stargit');
   });
 
   afterEach(async () => {
